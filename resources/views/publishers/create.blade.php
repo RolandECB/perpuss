@@ -1,8 +1,8 @@
 @extends('templates.default')
 
 @php
-    $title = 'Data Siswa';
-    $preTitle = 'Tambah Data Data';
+    $title = 'Data Publisher';
+    $preTitle = 'Tambah Data';
 @endphp
 
 @section('content')
@@ -11,7 +11,7 @@
             <form action="{{ route('publishers.store') }}" class="" method="post">
                 @csrf
                 <div class="mb-3">
-                    <label class="form-label">Nama</label>
+                    <label class="form-label">Publisher</label>
                     <input type="text" name="name"
                         class="form-control
                         @error('name')
